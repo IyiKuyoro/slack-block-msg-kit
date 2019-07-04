@@ -1,0 +1,58 @@
+{
+  "name": "slack-block-msg-kit",
+  "version": "0.0.1",
+  "description": "A simple API for generating slack block messages",
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "clear": "rm -rf dist",
+    "prepare": "npm run clear && npm run build",
+    "prepublishOnly": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IyiKuyoro/slack-block-msg-kit.git"
+  },
+  "keywords": [
+    "slack",
+    "block",
+    "kit",
+    "message-builder"
+  ],
+  "author": "Opeoluwa Iyi-Kuyoro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IyiKuyoro/slack-block-msg-kit/issues"
+  },
+  "homepage": "https://github.com/IyiKuyoro/slack-block-msg-kit#readme",
+  "devDependencies": {
+    "commitplease": "^3.2.0",
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {},
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "refactor",
+      "test",
+      "chore"
+    ],
+    "scope": "\\S+.*"
+  }
+}
