@@ -35,6 +35,28 @@ export default class Text {
   }
 
   /**
+   * @description Allow text to be rendered with emojis
+   * @returns Text
+   */
+  public allowEmoji(): Text {
+    this.validateEmoji(this.type, true);
+
+    this.emoji = true;
+    return this;
+  }
+
+  /**
+   * @description Allow text to be displayed verbatim
+   * @returns Text
+   */
+  public displayVerbatim(): Text {
+    this.validateVerbatim(this.type, true);
+
+    this.verbatim = true;
+    return this;
+  }
+
+  /**
    * @description Ensure emoji is not being used with a plain text type.
    * @param  {TextType} type The type of the text object
    * @param  {boolean} emoji Wether or not emojis should be used
