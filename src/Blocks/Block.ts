@@ -8,7 +8,7 @@ export enum BlockType {
 
 /**
  * @description This is the base class for other blocks like section and actions. You cannot create an instance of this class.
- * For more info regarding Blocks, kindly visit https://api.slack.com/reference/messaging/blocks#section
+ * For more info regarding Blocks, kindly visit https://api.slack.com/reference/messaging/blocks
  */
 export default abstract class Block {
   public type: BlockType;
