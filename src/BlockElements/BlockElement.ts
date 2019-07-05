@@ -12,7 +12,7 @@ export enum BlockElementType {
 
 /**
  * @description This is the base class for other block elements like image and button. You cannot create an instance of this class.
- * For more info regarding Blocks, kindly visit https://api.slack.com/reference/messaging/block-elements
+ * For more info regarding Block Elements, kindly visit https://api.slack.com/reference/messaging/block-elements
  */
 export default abstract class BlockElement {
   /**
