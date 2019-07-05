@@ -4,7 +4,7 @@ import { Helpers } from '../helpers';
 import Block, { BlockType } from './Block';
 
 /**
- * @description This is a section class for creating section blocks.
+ * @description This is a section class for creating section blocks
  * For more info regarding section blocks, kindly visit https://api.slack.com/reference/messaging/blocks#section
  */
 export default class Section extends Block {
