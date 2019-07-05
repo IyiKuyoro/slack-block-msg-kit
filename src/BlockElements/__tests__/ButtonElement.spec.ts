@@ -121,7 +121,7 @@ describe('ButtonElement', () => {
           type: 'plain_text',
         },
         type: 'button',
-      })
+      });
     });
   });
 
@@ -136,9 +136,7 @@ describe('ButtonElement', () => {
         'No',
       );
 
-      dialog
-        .recogniseConfirmButtonEmoji()
-        .recogniseDenyButtonEmoji()
+      dialog.recogniseConfirmButtonEmoji().recogniseDenyButtonEmoji();
 
       btn.addConfirmationDialog(dialog);
 
@@ -169,7 +167,7 @@ describe('ButtonElement', () => {
           type: 'plain_text',
         },
         type: 'button',
-      })
+      });
     });
   });
 });
