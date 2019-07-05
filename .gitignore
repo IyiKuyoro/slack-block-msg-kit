@@ -3,6 +3,7 @@
 
 # packages
 node_modules
+coverage
 
 # builds
 dist

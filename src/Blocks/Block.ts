@@ -1,3 +1,5 @@
+import { Helpers } from "../helpers";
+
 export enum BlockType {
   section = 'section',
   divider = 'divider',
@@ -33,17 +35,7 @@ export default abstract class Block {
    * @param  {string} blockId The unique identifier for this block
    */
   public addBlockId(blockId: string) {
-    this.validateBlockId(blockId);
+    Helpers.validateString(blockId, 'blockId', 255);
     this.block_id = blockId;
-  }
-
-  /**
-   * @description validate the block id passed
-   * @param  {string} blockId
-   */
-  private validateBlockId(blockId: string) {
-    if (blockId.length > 255) {
-      throw new Error('blockId cannot be more that 255 characters');
-    }
   }
 }

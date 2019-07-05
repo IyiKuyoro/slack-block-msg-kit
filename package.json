@@ -1,6 +1,6 @@
 {
   "name": "slack-block-msg-kit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple API for generating slack block messages",
   "main": "./dist/index.js",
   "files": [
