@@ -82,7 +82,12 @@ export default class ButtonElement extends BlockElement {
    * @param  {string} denyButton The deny button text
    * @returns ButtonElement
    */
-  public addConfirmationDialogByParameters(dialogTitle: string, dialogText: Text, confirmButton: string, denyButton: string): ButtonElement {
+  public addConfirmationDialogByParameters(
+    dialogTitle: string,
+    dialogText: Text,
+    confirmButton: string,
+    denyButton: string,
+  ): ButtonElement {
     this.confirm = new ConfirmationDialog(dialogTitle, dialogText, confirmButton, denyButton);
 
     return this;

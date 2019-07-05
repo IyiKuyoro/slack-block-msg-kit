@@ -15,9 +15,9 @@ export default class Section extends Block {
   constructor(text: Text, blockId?: string) {
     // Assign a blockId is one is passed
     if (blockId !== undefined) {
-      super(BlockType.section, blockId)
+      super(BlockType.section, blockId);
     } else {
-      super(BlockType.section)
+      super(BlockType.section);
     }
 
     Helpers.validateString(text.text, 'Text string', 3000);

@@ -9,7 +9,7 @@ describe('ConfirmationDialog', () => {
 
     expect(dialog.title).toEqual({
       text: 'True?',
-      type: 'plain_text'
+      type: 'plain_text',
     });
     expect(dialog.text).toEqual({
       text: 'Hey, are you sure about that?',
@@ -35,7 +35,7 @@ describe('ConfirmationDialog', () => {
       expect(dialog.title).toEqual({
         emoji: true,
         text: 'True?',
-        type: 'plain_text'
+        type: 'plain_text',
       });
     });
   });
@@ -50,11 +50,11 @@ describe('ConfirmationDialog', () => {
       expect(dialog.text).toEqual({
         emoji: true,
         text: 'Hey, are you sure about that?',
-        type: 'plain_text'
+        type: 'plain_text',
       });
     });
 
-    it('should throw an error if type is mrkdwn and emoji is to be added', (done) => {
+    it('should throw an error if type is mrkdwn and emoji is to be added', done => {
       try {
         const dialogText = new Text(TextType.mrkdwn, 'Hey, are you sure about that?');
         const dialog = new ConfirmationDialog('True?', dialogText, 'Yes', 'No');
@@ -81,7 +81,7 @@ describe('ConfirmationDialog', () => {
       });
     });
 
-    it('should throw an error if type is plain_text and text is to be displayed verbatim', (done) => {
+    it('should throw an error if type is plain_text and text is to be displayed verbatim', done => {
       try {
         const dialogText = new Text(TextType.plainText, 'Hey, are you sure about that?');
         const dialog = new ConfirmationDialog('True?', dialogText, 'Yes', 'No');
@@ -104,7 +104,7 @@ describe('ConfirmationDialog', () => {
       expect(dialog.confirm).toEqual({
         emoji: true,
         text: 'Yes',
-        type: 'plain_text'
+        type: 'plain_text',
       });
     });
   });
@@ -119,7 +119,7 @@ describe('ConfirmationDialog', () => {
       expect(dialog.deny).toEqual({
         emoji: true,
         text: 'No',
-        type: 'plain_text'
+        type: 'plain_text',
       });
     });
   });
