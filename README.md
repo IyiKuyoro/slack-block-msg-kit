@@ -4,3 +4,21 @@
 
 This is a simple package that helps build slack block messages and all it's elements. It has robust validations to ensure mistakes are not made with the message formating.
 **Still in development**
+
+## Currently available classes
+
+This library is still in active development and only the following classes are currently available.
+
+### Block
+
+- **Section** > <https://api.slack.com/reference/messaging/blocks#section>
+
+### Block Elements
+
+- **Image** > <https://api.slack.com/reference/messaging/block-elements#image>
+- **Button** > <https://api.slack.com/reference/messaging/block-elements#button>
+
+### Composition Objects
+
+- **Text** > <https://api.slack.com/reference/messaging/composition-objects#text>
+- **Confirmation Dialog** > <https://api.slack.com/reference/messaging/composition-objects#confirm>
