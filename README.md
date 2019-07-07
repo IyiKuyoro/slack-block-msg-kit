@@ -22,3 +22,17 @@ This library is still in active development and only the following classes are c
 
 - **Text** > <https://api.slack.com/reference/messaging/composition-objects#text>
 - **Confirmation Dialog** > <https://api.slack.com/reference/messaging/composition-objects#confirm>
+
+## How to Use
+
+Typically you will have setup a slack bot you wish to use in sending messages on slack. This document does not contain any instructions on how to setup a slack bot or how to communicate with the slack API for that mater. The instructions detailed below are to help build the slack message layout blocks that are sent to slack for display.
+
+Install the package as a dependency to get started. `npm i --save slack-block-msg-kit`
+
+### Blocks
+
+Slack messages are now built with individual layout blocks that comprise of number of elements sent as a json object. [This](https://api.slack.com/reference/messaging/blocks) page contains all the currently available blocks from slack.
+
+#### Section
+
+To build a section block, import the section block class into your file.
