@@ -8,7 +8,7 @@ describe('Text', () => {
       text: 'Some plain text',
       type: 'plain_text',
     });
-  })
+  });
 
   it('should create a new text with emoji', () => {
     const text = new Text(TextType.plainText, 'Some emoji text', true);
@@ -30,21 +30,49 @@ describe('Text', () => {
     });
   });
 
-  it('should throw an error if emoji is paired with mrkdwn', (done) => {
+  it('should throw an error if emoji is paired with mrkdwn', done => {
     try {
       const text = new Text(TextType.mrkdwn, 'Some emoji text', true);
-    } catch(error) {
+    } catch (error) {
       expect(error.message).toEqual('You cannot use a emojis with mrkdwn type.');
       done();
     }
   });
 
-  it('should throw an error if verbatim is paired with plain_text', (done) => {
+  it('should throw an error if verbatim is paired with plain_text', done => {
     try {
       const text = new Text(TextType.plainText, 'Some verbatim text', undefined, true);
-    } catch(error) {
+    } catch (error) {
       expect(error.message).toEqual('You cannot use verbatim with plain_text type.');
       done();
     }
+  });
+
+  describe('allowEmoji()', () => {
+    it('should add emoji to the text', () => {
+      const text = new Text(TextType.plainText, 'Some verbatim text');
+
+      text.allowEmoji();
+
+      expect(text).toEqual({
+        emoji: true,
+        text: 'Some verbatim text',
+        type: 'plain_text',
+      });
+    });
+  });
+
+  describe('displayVerbatim()', () => {
+    it('should display text verbatim', () => {
+      const text = new Text(TextType.mrkdwn, 'Some verbatim text');
+
+      text.displayVerbatim();
+
+      expect(text).toEqual({
+        text: 'Some verbatim text',
+        type: 'mrkdwn',
+        verbatim: true,
+      });
+    });
   });
 });

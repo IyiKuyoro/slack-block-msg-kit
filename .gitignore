@@ -6,5 +6,10 @@ node_modules
 coverage
 
 # builds
-dist
+Blocks
+BlockElements
+CompositionObjects
+helpers
+index.d.ts
+index.js
 *.tgz

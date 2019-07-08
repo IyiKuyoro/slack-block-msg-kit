@@ -121,55 +121,53 @@ describe('ButtonElement', () => {
           type: 'plain_text',
         },
         type: 'button',
-      })
+      });
     });
   });
 
-  describe('addConfirmationDialog()', () => {
-    it('should add confirmation dialogue', () => {
-      const btn = new ButtonElement('Button Text', 'AC001');
+  // describe('addConfirmationDialog()', () => {
+  //   it('should add confirmation dialogue', () => {
+  //     const btn = new ButtonElement('Button Text', 'AC001');
 
-      const dialog = new ConfirmationDialog(
-        'Dismiss?',
-        new Text(TextType.plainText, 'Are you sure you wish to dismiss?'),
-        'Yes',
-        'No',
-      );
+  //     const dialog = new ConfirmationDialog(
+  //       'Dismiss?',
+  //       new Text(TextType.plainText, 'Are you sure you wish to dismiss?'),
+  //       'Yes',
+  //       'No',
+  //     );
 
-      dialog
-        .recogniseConfirmButtonEmoji()
-        .recogniseDenyButtonEmoji()
+  //     dialog.recogniseConfirmButtonEmoji().recogniseDenyButtonEmoji();
 
-      btn.addConfirmationDialog(dialog);
+  //     btn.addConfirmationDialog(dialog);
 
-      expect(btn).toEqual({
-        action_id: 'AC001',
-        confirm: {
-          confirm: {
-            emoji: true,
-            text: 'Yes',
-            type: 'plain_text',
-          },
-          deny: {
-            emoji: true,
-            text: 'No',
-            type: 'plain_text',
-          },
-          text: {
-            text: 'Are you sure you wish to dismiss?',
-            type: 'plain_text',
-          },
-          title: {
-            text: 'Dismiss?',
-            type: 'plain_text',
-          },
-        },
-        text: {
-          text: 'Button Text',
-          type: 'plain_text',
-        },
-        type: 'button',
-      })
-    });
-  });
+  //     expect(btn).toEqual({
+  //       action_id: 'AC001',
+  //       confirm: {
+  //         confirm: {
+  //           emoji: true,
+  //           text: 'Yes',
+  //           type: 'plain_text',
+  //         },
+  //         deny: {
+  //           emoji: true,
+  //           text: 'No',
+  //           type: 'plain_text',
+  //         },
+  //         text: {
+  //           text: 'Are you sure you wish to dismiss?',
+  //           type: 'plain_text',
+  //         },
+  //         title: {
+  //           text: 'Dismiss?',
+  //           type: 'plain_text',
+  //         },
+  //       },
+  //       text: {
+  //         text: 'Button Text',
+  //         type: 'plain_text',
+  //       },
+  //       type: 'button',
+  //     });
+  //   });
+  // });
 });

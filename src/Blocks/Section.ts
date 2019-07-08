@@ -4,7 +4,7 @@ import { Helpers } from '../helpers';
 import Block, { BlockType } from './Block';
 
 /**
- * @description This is a section class for creating section blocks.
+ * @description This is a section class for creating section blocks
  * For more info regarding section blocks, kindly visit https://api.slack.com/reference/messaging/blocks#section
  */
 export default class Section extends Block {
@@ -15,9 +15,9 @@ export default class Section extends Block {
   constructor(text: Text, blockId?: string) {
     // Assign a blockId is one is passed
     if (blockId !== undefined) {
-      super(BlockType.section, blockId)
+      super(BlockType.section, blockId);
     } else {
-      super(BlockType.section)
+      super(BlockType.section);
     }
 
     Helpers.validateString(text.text, 'Text string', 3000);

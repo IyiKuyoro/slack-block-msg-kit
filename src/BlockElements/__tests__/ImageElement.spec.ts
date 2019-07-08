@@ -7,7 +7,7 @@ describe('ImageElement', () => {
     expect(image).toEqual({
       alt_text: 'fake image',
       image_url: 'https://fakseimageurl.jpg',
-      type: 'image'
-    })
+      type: 'image',
+    });
   });
 });

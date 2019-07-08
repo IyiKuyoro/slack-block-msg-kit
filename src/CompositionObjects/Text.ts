@@ -1,6 +1,6 @@
 export enum TextType {
-  plainText = "plain_text",
-  mrkdwn = "mrkdwn",
+  plainText = 'plain_text',
+  mrkdwn = 'mrkdwn',
 }
 
 /** This class represents a Slack TextObject.
@@ -76,7 +76,7 @@ export default class Text {
    */
   private validateVerbatim(type: TextType, verbatim: boolean): void {
     if (type === TextType.plainText && verbatim === true) {
-      throw new Error('You cannot use verbatim with plain_text type.')
+      throw new Error('You cannot use verbatim with plain_text type.');
     }
   }
 }

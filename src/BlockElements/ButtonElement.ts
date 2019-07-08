@@ -82,21 +82,26 @@ export default class ButtonElement extends BlockElement {
    * @param  {string} denyButton The deny button text
    * @returns ButtonElement
    */
-  public addConfirmationDialogByParameters(dialogTitle: string, dialogText: Text, confirmButton: string, denyButton: string): ButtonElement {
+  public addConfirmationDialogByParameters(
+    dialogTitle: string,
+    dialogText: Text,
+    confirmButton: string,
+    denyButton: string,
+  ): ButtonElement {
     this.confirm = new ConfirmationDialog(dialogTitle, dialogText, confirmButton, denyButton);
 
     return this;
   }
 
-  /**
-   * @description Add a confirmation dialog that is displayed when the button is clicked.
-   * This method gives you the flexibility to add emojis to the text.
-   * @param  {ConfirmationDialog} confirmationDialog
-   * @returns ButtonElement
-   */
-  public addConfirmationDialog(confirmationDialog: ConfirmationDialog): ButtonElement {
-    this.confirm = confirmationDialog;
+  // /**
+  //  * @description Add a confirmation dialog that is displayed when the button is clicked.
+  //  * This method gives you the flexibility to add emojis to the text.
+  //  * @param  {ConfirmationDialog} confirmationDialog
+  //  * @returns ButtonElement
+  //  */
+  // public addConfirmationDialog(confirmationDialog: ConfirmationDialog): ButtonElement {
+  //   this.confirm = confirmationDialog;
 
-    return this;
-  }
+  //   return this;
+  // }
 }

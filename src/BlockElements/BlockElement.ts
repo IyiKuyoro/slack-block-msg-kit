@@ -19,7 +19,5 @@ export default abstract class BlockElement {
    * @description Constructs a new block element
    * @param  {BlockElementType} type The type of the block element being created
    */
-  constructor(
-    public type: BlockElementType
-  ) { }
+  constructor(public type: BlockElementType) {}
 }

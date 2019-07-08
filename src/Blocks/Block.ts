@@ -1,4 +1,4 @@
-import { Helpers } from "../helpers";
+import { Helpers } from '../helpers';
 
 export enum BlockType {
   section = 'section',
@@ -28,7 +28,6 @@ export default abstract class Block {
 
     this.type = type;
   }
-
 
   /**
    * @description Add or change blockId
