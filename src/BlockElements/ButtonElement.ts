@@ -93,15 +93,15 @@ export default class ButtonElement extends BlockElement {
     return this;
   }
 
-  /**
-   * @description Add a confirmation dialog that is displayed when the button is clicked.
-   * This method gives you the flexibility to add emojis to the text.
-   * @param  {ConfirmationDialog} confirmationDialog
-   * @returns ButtonElement
-   */
-  public addConfirmationDialog(confirmationDialog: ConfirmationDialog): ButtonElement {
-    this.confirm = confirmationDialog;
+  // /**
+  //  * @description Add a confirmation dialog that is displayed when the button is clicked.
+  //  * This method gives you the flexibility to add emojis to the text.
+  //  * @param  {ConfirmationDialog} confirmationDialog
+  //  * @returns ButtonElement
+  //  */
+  // public addConfirmationDialog(confirmationDialog: ConfirmationDialog): ButtonElement {
+  //   this.confirm = confirmationDialog;
 
-    return this;
-  }
+  //   return this;
+  // }
 }

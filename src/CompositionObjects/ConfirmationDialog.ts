@@ -29,48 +29,48 @@ export default class ConfirmationDialog {
     this.deny = new Text(TextType.plainText, denyButton);
   }
 
-  /**
-   * @description Display emojis in title
-   * @returns ConfirmationDialog
-   */
-  public recogniseTitleEmoji(): ConfirmationDialog {
-    this.title.allowEmoji();
-    return this;
-  }
+  // /**
+  //  * @description Display emojis in title
+  //  * @returns ConfirmationDialog
+  //  */
+  // public recogniseTitleEmoji(): ConfirmationDialog {
+  //   this.title.allowEmoji();
+  //   return this;
+  // }
 
-  /**
-   * @description Display emojis in the text
-   * @returns ConfirmationDialog
-   */
-  public recogniseTextEmoji(): ConfirmationDialog {
-    this.text.allowEmoji();
-    return this;
-  }
+  // /**
+  //  * @description Display emojis in the text
+  //  * @returns ConfirmationDialog
+  //  */
+  // public recogniseTextEmoji(): ConfirmationDialog {
+  //   this.text.allowEmoji();
+  //   return this;
+  // }
 
-  /**
-   * @description Display message body as is without any conversions
-   * @returns ConfirmationDialog
-   */
-  public displayTextVerbatim(): ConfirmationDialog {
-    this.text.displayVerbatim();
-    return this;
-  }
+  // /**
+  //  * @description Display message body as is without any conversions
+  //  * @returns ConfirmationDialog
+  //  */
+  // public displayTextVerbatim(): ConfirmationDialog {
+  //   this.text.displayVerbatim();
+  //   return this;
+  // }
 
-  /**
-   * @description Display emojis in the confirmation button
-   * @returns ConfirmationDialog
-   */
-  public recogniseConfirmButtonEmoji(): ConfirmationDialog {
-    this.confirm.allowEmoji();
-    return this;
-  }
+  // /**
+  //  * @description Display emojis in the confirmation button
+  //  * @returns ConfirmationDialog
+  //  */
+  // public recogniseConfirmButtonEmoji(): ConfirmationDialog {
+  //   this.confirm.allowEmoji();
+  //   return this;
+  // }
 
-  /**
-   * @description Display emojis in the deny button
-   * @returns ConfirmationDialog
-   */
-  public recogniseDenyButtonEmoji(): ConfirmationDialog {
-    this.deny.allowEmoji();
-    return this;
-  }
+  // /**
+  //  * @description Display emojis in the deny button
+  //  * @returns ConfirmationDialog
+  //  */
+  // public recogniseDenyButtonEmoji(): ConfirmationDialog {
+  //   this.deny.allowEmoji();
+  //   return this;
+  // }
 }

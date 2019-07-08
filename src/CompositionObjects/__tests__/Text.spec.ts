@@ -47,4 +47,32 @@ describe('Text', () => {
       done();
     }
   });
+
+  describe('allowEmoji()', () => {
+    it('should add emoji to the text', () => {
+      const text = new Text(TextType.plainText, 'Some verbatim text');
+
+      text.allowEmoji();
+
+      expect(text).toEqual({
+        emoji: true,
+        text: 'Some verbatim text',
+        type: 'plain_text',
+      });
+    });
+  });
+
+  describe('displayVerbatim()', () => {
+    it('should display text verbatim', () => {
+      const text = new Text(TextType.mrkdwn, 'Some verbatim text');
+
+      text.displayVerbatim();
+
+      expect(text).toEqual({
+        text: 'Some verbatim text',
+        type: 'mrkdwn',
+        verbatim: true,
+      });
+    });
+  });
 });
