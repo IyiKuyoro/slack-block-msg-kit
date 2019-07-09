@@ -15,9 +15,15 @@ This is a simple library that helps build slack block messages and all it's elem
       - [Section](#Section)
         - [Importing the Section Class](#Importing-the-Section-Class)
         - [Creating a Section](#Creating-a-Section)
-        - [Adding a block_id](#Adding-a-blockid)
-        - [Adding fields](#Adding-fields)
+        - [Adding a block_id (Section)](#Adding-a-blockid-Section)
+        - [Adding fields (Section)](#Adding-fields-Section)
         - [Adding an accessory](#Adding-an-accessory)
+      - [Image](#Image)
+        - [Importing the Image class](#Importing-the-Image-class)
+        - [Creating an Image](#Creating-an-Image)
+        - [Adding a block_id (Image)](#Adding-a-blockid-Image)
+        - [Adding an Image Title (Image.addTitle)](#Adding-an-Image-Title-ImageaddTitle)
+        - [Possible errors](#Possible-errors)
     - [Block Elements](#Block-Elements)
       - [Button](#Button)
         - [Importing the Button Class](#Importing-the-Button-Class)
@@ -26,7 +32,7 @@ This is a simple library that helps build slack block messages and all it's elem
         - [Adding a value](#Adding-a-value)
         - [Changing the style of the button](#Changing-the-style-of-the-button)
         - [Adding a confirmation dialog](#Adding-a-confirmation-dialog)
-      - [Image](#Image)
+      - [Image Element](#Image-Element)
         - [Importing the image class](#Importing-the-image-class)
         - [Creating an Image Element](#Creating-an-Image-Element)
     - [Composition Objects](#Composition-Objects)
@@ -49,6 +55,7 @@ This library is still in active development and only the following classes are c
 - Block
 
 > - **Section** > <https://api.slack.com/reference/messaging/blocks#section>
+> - **Image** > <https://api.slack.com/reference/messaging/blocks#image>
 
 - Block Elements
 
@@ -101,7 +108,7 @@ const section = new Section(
 );
 ```
 
-##### Adding a block_id
+##### Adding a block_id (Section)
 
 Sections can also be made with a block_id. A block_id is returned to your application as part of the payload when an action is generated from that block on slack. You may want to use a block_id if you wish to uniquely identify the source of an action. It is not one of the compulsory section parameters. To create a section object with a block_id, we pass a string as the second parameter to the section constructor like below. Keep in mind that the block_id cannot be more than 255 characters. An error will be thrown otherwise.
 
@@ -115,7 +122,7 @@ const section = new Section(
 );
 ```
 
-##### Adding fields
+##### Adding fields (Section)
 
 A field is a array of [text objects](#Text) that are rendered side by side in a table like manner in a section. Below is a visual example of what fields are rendered as on slack.
 
@@ -161,6 +168,72 @@ section.addAccessory(
     new ButtonElement('View Changes', 'ACT001')
   );
 ```
+
+#### Image
+
+Images can be displayed in slack messages as well. [Here](https://api.slack.com/reference/messaging/blocks#image) is the slack documentation of the image block. This is quite different from [Image](#Image-Element).
+
+##### Importing the Image class
+
+```javascript
+import { Image } from 'slack-block-msg-kit';
+```
+
+or
+
+```javascript
+import Image from 'slack-block-msg-kit/Blocks/Image';
+```
+
+##### Creating an Image
+
+| Parameter | Type   | Description                                        | Example                   |
+| --------- | ------ | -------------------------------------------------- | ------------------------- |
+| imageUrl  | string | The url of the image to be loaded into the message | '<https://fakeimage.png>' |
+| altText   | string | The alternative text of the image to be loaded     | 'fake image'              |
+| blockId?  | string | The blockId of the image to be loaded              | 'BLK001'                  |
+
+The image object is created by calling the constructors and passing two required parameters; imageUrl and the altText. The blockId parameter is optional Below is an example.
+
+```javascript
+import Image from 'slack-block-msg-kit/Blocks/Image';
+
+const img = new Image('https://fakeimage.img', 'fake image');
+```
+
+##### Adding a block_id (Image)
+
+Adding a block_id to the Image object is as simple as adding a third parameter to the Image constructor.
+
+```javascript
+import Image from 'slack-block-msg-kit/Blocks/Image';
+
+const img = new Image('https://fakeimage.img', 'fake image', 'BLK001');
+```
+
+##### Adding an Image Title (Image.addTitle)
+
+| Parameter | Type   | Description                        | Example       |
+| --------- | ------ | ---------------------------------- | ------------- |
+| title     | string | The title of the image to be added | 'Image title' |
+
+To add a title to the image simply call the addTitle method passing in the image title you wish to use. Note however, that the title cannot be more than 2000 characters. Below is an example.
+
+```javascript
+import Image from 'slack-block-msg-kit/Blocks/Image';
+
+const img = new Image('https://fakeimage.img', 'fake image');
+
+img.addTitle('Image title');
+```
+
+##### Possible errors
+
+| Error | Cause | Remedy |
+| --------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- |
+| 'imageUrl should not be more than 3000 characters.' | This would happen if you use an image url that is more than 3000 characters long.      | Try to reduce the image url by using a tool like <https://bitly.com/> |
+| 'altText should not be more than 2000 characters.'  | This would happen if you use an alternate text that is more than 3000 characters long. | Try to reduce the text length                                  |
+| 'title should not be more than 2000 characters.'  | This would happen if you try to add a title that has more than 2000 characters.            | Try to reduce the length                                       |
 
 ### Block Elements
 
@@ -246,7 +319,7 @@ button.addConfirmationDialogByParameters(
 );
 ```
 
-#### Image
+#### Image Element
 
 An image element just like a button element is usually a component of a block like a section.
 
