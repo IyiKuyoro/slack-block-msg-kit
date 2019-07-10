@@ -44,38 +44,32 @@ export default class Actions extends Block {
 
   /**
    * @description Validate the action ids
-   * @returns Actions
    */
-  private validateActionIds(elements: BlockElement[]): Actions {
-    const actionIds: { [k: string]: any } = {};
+  private validateActionIds(elements: BlockElement[]): void {
+    const actionIds: { [k: string]: boolean } = {};
 
     for (const element of elements) {
       const id = element.action_id;
 
       if (id) {
-        if (actionIds[id]) {
+        if (actionIds[id] || '') {
           throw new Error(`Action Id '${id}' has a conflict in the list of elements`);
         }
 
         actionIds[id] = true;
       }
     }
-
-    return this;
   }
 
   /**
    * @description Ensure that no image element is passed
    * @param  {BlockElement[]} elements The elements to be validated
-   * @returns Actions
    */
-  private validateElements(elements: BlockElement[]): Actions {
+  private validateElements(elements: BlockElement[]): void {
     for (const element of elements) {
       if (element instanceof ImageElement) {
         throw new Error('Image elements cannot be used in actions block');
       }
     }
-
-    return this;
   }
 }
