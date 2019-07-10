@@ -3,7 +3,7 @@ import { Helpers } from '../helpers';
 import Block, { BlockType } from './Block';
 
 /**
- * @description This is the base class for other blocks like section and actions. You cannot create an instance of this class.
+ * @description This is the image class.
  * For more info regarding Blocks, kindly visit https://api.slack.com/reference/messaging/blocks#image
  */
 export default class Image extends Block {

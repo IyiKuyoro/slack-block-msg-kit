@@ -14,29 +14,26 @@ export enum ButtonStyle {
  */
 export default class ButtonElement extends BlockElement {
   public text: Text;
-  public action_id: string;
   public url?: string;
   public value?: string;
   public style?: ButtonStyle;
   public confirm?: ConfirmationDialog;
 
   /**
-   * @description Creates a bew instance of the button element class.
+   * @description Creates a new instance of the button element class.
    * @param  {string} textString The string to be appended in the text object
    * @param  {string} actionId The action id for this button
    */
   constructor(textString: string, actionId: string, value?: string) {
-    super(BlockElementType.button);
+    super(BlockElementType.button, actionId);
 
     if (value !== undefined) {
       Helpers.validateString(value, 'value', 2000);
       this.value = value;
     }
 
-    Helpers.validateString(actionId, 'actionId', 255);
     Helpers.validateString(textString, 'textString', 75);
     this.text = new Text(TextType.plainText, textString);
-    this.action_id = actionId;
   }
 
   /**
