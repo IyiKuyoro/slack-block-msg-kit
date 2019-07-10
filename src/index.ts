@@ -3,6 +3,7 @@ import ButtonElement, { ButtonStyle } from './BlockElements/ButtonElement';
 import ImageElement from './BlockElements/ImageElement';
 import Actions from './Blocks/Actions';
 import Block, { BlockType } from './Blocks/Block';
+import Context from './Blocks/Context';
 import Image from './Blocks/Image';
 import Section from './Blocks/Section';
 import ConfirmationDialog from './CompositionObjects/ConfirmationDialog';
@@ -17,6 +18,7 @@ export {
   ButtonElement,
   ButtonStyle,
   ConfirmationDialog,
+  Context,
   Image,
   ImageElement,
   Section,
