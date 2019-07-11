@@ -7,6 +7,7 @@ import Context from './Blocks/Context';
 import Image from './Blocks/Image';
 import Section from './Blocks/Section';
 import ConfirmationDialog from './CompositionObjects/ConfirmationDialog';
+import Option from './CompositionObjects/Option';
 import Text, { TextType } from './CompositionObjects/Text';
 
 export {
@@ -21,6 +22,7 @@ export {
   Context,
   Image,
   ImageElement,
+  Option,
   Section,
   Text,
   TextType,
