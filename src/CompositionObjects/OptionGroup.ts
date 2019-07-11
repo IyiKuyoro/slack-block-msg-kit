@@ -16,32 +16,10 @@ export default class OptionGroup {
    */
   constructor(label: string, options: Option[]) {
     Helpers.validateString(label, 'label', 75);
-
-    if (options.length > 100) {
-      throw new Error('Cannot have more than 100 options in a group');
-    }
-    this.validateOptions(options);
+    Helpers.validateArrayLength(options, 100, 'Cannot have more than 100 options in a group');
+    Helpers.validateOptions(options);
 
     this.label = new Text(TextType.plainText, label);
     this.options = options;
-  }
-
-  /**
-   * @description Ensure thant no two options have the same value
-   * @param  {Option[]} options
-   * @returns void
-   */
-  private validateOptions(options: Option[]): void {
-    const optionsValues: { [k: string]: boolean } = {};
-
-    for (const option of options) {
-      const value = option.value;
-
-      if (optionsValues[value]) {
-        throw new Error(`Two options cannot share the same value in one group: '${value}'`);
-      }
-
-      optionsValues[value] = true;
-    }
   }
 }

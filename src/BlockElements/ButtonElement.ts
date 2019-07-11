@@ -72,7 +72,7 @@ export default class ButtonElement extends BlockElement {
 
   /**
    * @description Add a confirmation dialog by providing the parameters that is displayed when the button is clicked.
-   * This method will create the confirmation dialog. If you want full control over how the dialog is created we suggest (addConfirmationDialog).
+   * This method will create the confirmation dialog.
    * @param  {string} dialogTitle The message to be displayed in the dialog
    * @param  {Text} dialogText The message to be displayed in the dialog
    * @param  {string} confirmButton The confirm button label text

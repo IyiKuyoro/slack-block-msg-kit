@@ -1,6 +1,7 @@
 import BlockElement, { BlockElementType } from './BlockElements/BlockElement';
 import ButtonElement, { ButtonStyle } from './BlockElements/ButtonElement';
 import ImageElement from './BlockElements/ImageElement';
+import StaticSelectElement from './BlockElements/StaticSelectElement';
 import Actions from './Blocks/Actions';
 import Block, { BlockType } from './Blocks/Block';
 import Context from './Blocks/Context';
@@ -26,6 +27,7 @@ export {
   Option,
   OptionGroup,
   Section,
+  StaticSelectElement,
   Text,
   TextType,
 };

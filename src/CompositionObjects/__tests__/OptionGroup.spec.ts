@@ -12,7 +12,7 @@ describe('OptionGroup', () => {
 
       const og = new OptionGroup('options', options);
     } catch (error) {
-      expect(error.message).toEqual('Cannot hae more than 100 options in a group');
+      expect(error.message).toEqual('Cannot have more than 100 options in a group');
       done();
     }
   });
