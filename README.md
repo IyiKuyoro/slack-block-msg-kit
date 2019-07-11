@@ -60,10 +60,14 @@ This is a simple library that helps build slack block messages and all it's elem
         - [Importing a Confirmation Dialog](#Importing-a-Confirmation-Dialog)
         - [Creating a Confirmation Dialog](#Creating-a-Confirmation-Dialog)
       - [Option](#Option)
-        - [Importing the Option class](#Importing-the-Option-class)
+        - [Importing the Option Class](#Importing-the-Option-Class)
         - [Creating an Option](#Creating-an-Option)
         - [Adding a url (Option.addUrl)](#Adding-a-url-OptionaddUrl)
         - [Possible Errors (Option)](#Possible-Errors-Option)
+      - [OptionGroup](#OptionGroup)
+        - [Importing the OptionGroup Class](#Importing-the-OptionGroup-Class)
+        - [Creating an OptionGroup](#Creating-an-OptionGroup)
+        - [Possible Errors (OptionGroup)](#Possible-Errors-OptionGroup)
 
 ## Currently available classes
 
@@ -85,6 +89,8 @@ This library is still in active development and only the following classes are c
 
 > - **Text** > <https://api.slack.com/reference/messaging/composition-objects#text>
 > - **Confirmation Dialog** > <https://api.slack.com/reference/messaging/composition-objects#confirm>
+> - **Option** > <https://api.slack.com/reference/messaging/composition-objects#option>
+> - **OptionGroup** > <https://api.slack.com/reference/messaging/composition-objects#option-group>
 
 ## How to Use
 
@@ -722,7 +728,7 @@ const dialog = new ConfirmationDialog(
 
 An option is a selection from a list. It is usually used with select elements for drop down menus.
 
-##### Importing the Option class
+##### Importing the Option Class
 
 ```javascript
 import { Option } from 'slack-block-msg-kit';
@@ -768,4 +774,49 @@ opt.addUrl('https://fakeurl.com');
 
 | Error | Cause | Remedy |
 | ----- | ----- | ------ |
+| 'text cannot be more than 75 characters' | Adding more than 75 characters in the text | Reduce the text size |
+| 'value cannot be more than 75 characters' | Adding more than 75 characters in the value | Reduce the value size |
 | 'url cannot be more than 3000 characters' | Adding a url that is more than 3000 characters | Reduce the url length with a tool like <https://bitly.com/> |
+
+#### OptionGroup
+
+An option group is a way of collection options together in a select menu.
+
+##### Importing the OptionGroup Class
+
+```javascript
+import { OptionGroup } from 'slack-block-msg-kit';
+```
+
+or
+
+```javascript
+import OptionGroup from 'slack-block-msg-kit/CompositionObjects/OptionGroup';
+```
+
+##### Creating an OptionGroup
+
+| Parameter | Type | Description | Example |
+| --------- | ---- | ----------- | ------- |
+| label     | string | The babel of this option group | 'Group one' |
+| options   | [Option](#Option)[] | An array of options to be added to the group. | [ new Option('option 1', 'one') ] |
+
+Creating an option group object is as simple as calling the constructor and passing the required parameters.
+
+```javascript
+import Option from 'slack-block-msg-kit/CompositionObjects/Option';
+import OptionGroup from 'slack-block-msg-kit/CompositionObjects/OptionGroup';
+
+const opts = new OptionGroup(
+  'options',
+  [new Option('option', 'option')]
+);
+```
+
+##### Possible Errors (OptionGroup)
+
+| Error | Cause | Remedy |
+| ----- | ----- | ------ |
+| 'label cannot be more than 75 characters' | Adding more than 75 characters in the label | Reduce the label size |
+| 'Cannot have more than 100 options in a group' | Adding more than 100 options in one group | Reduce the number of options in the array. |
+| 'Two options cannot share the same value in one group: 'value'' | Having two options with the same value in one group | Use unique values for each option. |
