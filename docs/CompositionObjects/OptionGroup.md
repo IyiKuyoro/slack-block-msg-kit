@@ -19,7 +19,7 @@ import OptionGroup from 'slack-block-msg-kit/CompositionObjects/OptionGroup';
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
 | label     | string | The babel of this option group | 'Group one' |
-| options   | [Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/Option.md)[] | An array of options to be added to the group. | [ new Option('option 1', 'one') ] |
+| options   | [Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/Option.md)[] | An array of options to be added to the group. | [ new Option('option 1', 'one') ] |
 
 Creating an option group object is as simple as calling the constructor and passing the required parameters.
 

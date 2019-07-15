@@ -21,26 +21,26 @@ Install the package as a dependency to get started. `npm i --save slack-block-ms
 
 This library is still in active development and only the following classes are currently available.
 
-- [Block](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/Blocks.md)
+- [Block](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/Blocks.md)
 
-> - **[Section](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/SectionBlock.md)**
-> - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ImageBlock.md)**
-> - **[Actions](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ActionsBlock.md)**
-> - **[Context](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ContextBlock.md)**
+> - **[Section](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/SectionBlock.md)**
+> - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/ImageBlock.md)**
+> - **[Actions](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/ActionsBlock.md)**
+> - **[Context](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/ContextBlock.md)**
 
-- [Block Elements](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/BlockElements.md)
+- [Block Elements](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/BlockElements.md)
 
-> - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/ImageElement.md)**
-> - **[Button](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/ButtonElement.md)**
-> - **[StaticSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/StaticSelect.md)**
-> - **[UserSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/UserSelect.md)**
+> - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ImageElement.md)**
+> - **[Button](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ButtonElement.md)**
+> - **[StaticSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/StaticSelect.md)**
+> - **[UserSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/UserSelect.md)**
 
-- [Composition Objects](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/CompositionObjects.md)
+- [Composition Objects](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/CompositionObjects.md)
 
-> - **[Text](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/Text.md)**
-> - **[Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/ConfirmationDialog.md)**
-> - **[Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/Option.md)**
-> - **[OptionGroup](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/OptionGroup.md)**
+> - **[Text](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/Text.md)**
+> - **[Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/ConfirmationDialog.md)**
+> - **[Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/Option.md)**
+> - **[OptionGroup](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/OptionGroup.md)**
 
 ## Contributors
 

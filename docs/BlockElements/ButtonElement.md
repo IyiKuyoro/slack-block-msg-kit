@@ -75,7 +75,7 @@ button.changeStyle(ButtonStyle.danger);
 
 ## Adding a confirmation dialog (.addConfirmationDialogByParameters())
 
-You may wish to confirm the user action before executing with a [Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/ConfirmationDialog.md). Simply make use of the (**addConfirmationDialogByParameters**) method for this.
+You may wish to confirm the user action before executing with a [Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/ConfirmationDialog.md). Simply make use of the (**addConfirmationDialogByParameters**) method for this.
 
 ```javascript
 import { Text, TextType } from 'slack-block-msg-kit';

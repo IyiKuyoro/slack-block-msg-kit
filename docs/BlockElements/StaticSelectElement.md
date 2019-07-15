@@ -33,8 +33,8 @@ const sse = new StaticSelectElement('actionId', 'placeholder');
 
 There are two ways of adding options to a static select object.
 
-- Adding an [options](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/Option.md) array (**addOptions()**)
-- Adding an [optionGroups](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/OptionGroup.md) array (**addOptionGroups()**)
+- Adding an [options](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/Option.md) array (**addOptions()**)
+- Adding an [optionGroups](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/OptionGroup.md) array (**addOptionGroups()**)
 
 One StaticSelect object cannot have both options and option groups.
 
@@ -42,7 +42,7 @@ One StaticSelect object cannot have both options and option groups.
 
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
-| options   | [Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/Option.md)[] | An array of options to be added to the menu | [ new Option('Option 1', 'one') ] |
+| options   | [Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/Option.md)[] | An array of options to be added to the menu | [ new Option('Option 1', 'one') ] |
 | _initialOptionIndex_ | number? | The index of the option to be used as the selected option when the menu is loaded | 0 |
 
 Below is an example
@@ -62,7 +62,7 @@ sse.addOptions([
 
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
-| optionGroups   | [OptionGroup](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/OptionGroup.md)[] | An array of option groups to be added to the menu | [ new OptionGroup('Group', [new Option('Option 1', 'one')])] |
+| optionGroups   | [OptionGroup](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/OptionGroup.md)[] | An array of option groups to be added to the menu | [ new OptionGroup('Group', [new Option('Option 1', 'one')])] |
 | _initialOptionGroupIndex_ | number? | The index of the option group to be used in selecting options array which contains the option to be used as the selected option when the menu is loaded | 0 |
 | _initialOptionIndex_ | number? | The index of the option to be used as the selected option when the menu is loaded | 0 |
 
@@ -82,7 +82,7 @@ sse.addOptionGroups(
 
 ## Adding a confirmation dialog (.addConfirmationDialogByParameters())
 
-You may wish to confirm the user selection with a [Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/ConfirmationDialog.md). Simply make use of the (**addConfirmationDialogByParameters**) method for this.
+You may wish to confirm the user selection with a [Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/ConfirmationDialog.md). Simply make use of the (**addConfirmationDialogByParameters**) method for this.
 
 ```javascript
 import StaticSelectElement from 'slack-block-msg-kit/BlockElements/StaticSelectElement';
