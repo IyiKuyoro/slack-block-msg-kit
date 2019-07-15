@@ -1,3 +1,4 @@
+import ConfirmationDialog from '../CompositionObjects/ConfirmationDialog';
 import Text, { TextType } from '../CompositionObjects/Text';
 import { Helpers } from '../helpers';
 import BlockElement, { BlockElementType } from './BlockElement';
@@ -8,6 +9,7 @@ import BlockElement, { BlockElementType } from './BlockElement';
  */
 export default abstract class SelectElement extends BlockElement {
   public placeholder: Text;
+  public confirm?: ConfirmationDialog;
 
   /**
    * @description Create a new instance of a select element.
@@ -21,5 +23,25 @@ export default abstract class SelectElement extends BlockElement {
     Helpers.validateString(placeholder, 'placeholder', 150);
 
     this.placeholder = new Text(TextType.plainText, placeholder);
+  }
+
+  /**
+   * @description Add a confirmation dialog by providing the parameters that is displayed when an option is selected.
+   * This method will create the confirmation dialog.
+   * @param  {string} dialogTitle The dialog title
+   * @param  {Text} dialogText The message to be displayed in the dialog
+   * @param  {string} confirmButton The confirm button label text
+   * @param  {string} denyButton The deny button text
+   * @returns ButtonElement
+   */
+  public addConfirmationDialogByParameters(
+    dialogTitle: string,
+    dialogText: Text,
+    confirmButton: string,
+    denyButton: string,
+  ): SelectElement {
+    this.confirm = new ConfirmationDialog(dialogTitle, dialogText, confirmButton, denyButton);
+
+    return this;
   }
 }
