@@ -12,11 +12,6 @@ This is a simple library that helps build slack block messages and all it's elem
   - [Currently available classes](#Currently-available-classes)
   - [How to Use](#How-to-Use)
     - [Composition Objects](#Composition-Objects)
-      - [Option](#Option)
-        - [Importing the Option Class](#Importing-the-Option-Class)
-        - [Creating an Option](#Creating-an-Option)
-        - [Adding a url (Option.addUrl)](#Adding-a-url-OptionaddUrl)
-        - [Possible Errors (Option)](#Possible-Errors-Option)
       - [OptionGroup](#OptionGroup)
         - [Importing the OptionGroup Class](#Importing-the-OptionGroup-Class)
         - [Creating an OptionGroup](#Creating-an-OptionGroup)
@@ -56,60 +51,6 @@ Install the package as a dependency to get started. `npm i --save slack-block-ms
 ### Composition Objects
 
 Most blocks require a composition object as a child object. One of the very commonly required composition objects is the [Text Object](#Text).
-
-#### Option
-
-An option is a selection from a list. It is usually used with select elements for drop down menus.
-
-##### Importing the Option Class
-
-```javascript
-import { Option } from 'slack-block-msg-kit';
-```
-
-or
-
-```javascript
-import Option from 'slack-block-msg-kit/CompositionObjects/Option';
-```
-
-##### Creating an Option
-
-| Parameter | Type | Description | Example |
-| --------- | ---- | ----------- | ------- |
-| text      | string | The text rendered as a plain text as the option's label on slack | 'Option 1' |
-| value     | string | The value returned to your application as part of the payload when this option is selected | 'one' |
-
-Create an option by passing the two required parameters to the constructor. Both parameters are strings that cannot be more than 75 characters long.
-
-```javascript
-import Option from 'slack-block-msg-kit/CompositionObjects/Option';
-
-const opt = new Option('Option 1', 'one');
-```
-
-##### Adding a url (Option.addUrl)
-
-| Parameter | Type | Description | Example |
-| --------- | ---- | ----------- | ------- |
-| url       | string | The url to be loaded in the user's browser | '<https://fakeurl.com>' |
-
-A url that can be loaded in the user's browser is one of the optional properties that can be added to the Option object. To add a url, simply call the **addUrl** method. The url passed cannot be more than 3000 characters.
-
-```javascript
-import Option from 'slack-block-msg-kit/CompositionObjects/Option';
-
-const opt = new Option('Option 1', 'one');
-opt.addUrl('https://fakeurl.com');
-```
-
-##### Possible Errors (Option)
-
-| Error | Cause | Remedy |
-| ----- | ----- | ------ |
-| 'text cannot be more than 75 characters' | Adding more than 75 characters in the text | Reduce the text size |
-| 'value cannot be more than 75 characters' | Adding more than 75 characters in the value | Reduce the value size |
-| 'url cannot be more than 3000 characters' | Adding a url that is more than 3000 characters | Reduce the url length with a tool like <https://bitly.com/> |
 
 #### OptionGroup
 
