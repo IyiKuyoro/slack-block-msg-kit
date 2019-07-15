@@ -9,34 +9,9 @@ This is a simple library that helps build slack block messages and all it's elem
 
 - [Slack Block Message Kit](#Slack-Block-Message-Kit)
   - [Table of Content](#Table-of-Content)
-  - [Currently available classes](#Currently-available-classes)
   - [How to Use](#How-to-Use)
-    - [Composition Objects](#Composition-Objects)
-
-## Currently available classes
-
-This library is still in active development and only the following classes are currently available.
-
-- Block
-
-> - **Section** > <https://api.slack.com/reference/messaging/blocks#section>
-> - **Image** > <https://api.slack.com/reference/messaging/blocks#image>
-> - **Actions** > <https://api.slack.com/reference/messaging/blocks#actions>
-> - **Context** > <https://api.slack.com/reference/messaging/blocks#context>
-
-- Block Elements
-
-> - **Image** > <https://api.slack.com/reference/messaging/block-elements#image>
-> - **Button** > <https://api.slack.com/reference/messaging/block-elements#button>
-> - **StaticSelect** > <https://api.slack.com/reference/messaging/block-elements#static-select>
-> - **UserSelect** > <https://api.slack.com/reference/messaging/block-elements#users-select>
-
-- Composition Objects
-
-> - **Text** > <https://api.slack.com/reference/messaging/composition-objects#text>
-> - **Confirmation Dialog** > <https://api.slack.com/reference/messaging/composition-objects#confirm>
-> - **Option** > <https://api.slack.com/reference/messaging/composition-objects#option>
-> - **OptionGroup** > <https://api.slack.com/reference/messaging/composition-objects#option-group>
+  - [Contributors](#Contributors)
+  - [How to Contribute](#How-to-Contribute)
 
 ## How to Use
 
@@ -44,6 +19,33 @@ Typically you will have setup a slack bot you wish to use in sending messages on
 
 Install the package as a dependency to get started. `npm i --save slack-block-msg-kit`
 
-### Composition Objects
+This library is still in active development and only the following classes are currently available.
 
-Most blocks require a composition object as a child object. One of the very commonly required composition objects is the [Text Object](#Text).
+- [Block](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/Blocks.md)
+
+> - **[Section](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/SectionBlock.md)**
+> - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ImageBlock.md)**
+> - **[Actions](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ActionsBlock.md)**
+> - **[Context](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ContextBlock.md)**
+
+- [Block Elements](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/BlockElements.md)
+
+> - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/ImageElement.md)**
+> - **[Button](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/ButtonElement.md)**
+> - **[StaticSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/StaticSelect.md)**
+> - **[UserSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/UserSelect.md)**
+
+- [Composition Objects](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/CompositionObjects.md)
+
+> - **[Text](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/Text.md)**
+> - **[Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/ConfirmationDialog.md)**
+> - **[Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/Option.md)**
+> - **[OptionGroup](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/OptionGroup.md)**
+
+## Contributors
+
+- [Opeoluwa Iyi-Kuyoro](https://github.com/IyiKuyoro): 👨🏿(Creator)
+
+## How to Contribute
+
+[Here](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/HOW_TO_CONTRIBUTE.md) is a little help with that.
