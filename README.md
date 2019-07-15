@@ -53,6 +53,12 @@ This is a simple library that helps build slack block messages and all it's elem
         - [Adding options (StaticSelect)](#Adding-options-StaticSelect)
         - [Adding a confirmation dialog (StaticSelectElement)](#Adding-a-confirmation-dialog-StaticSelectElement)
         - [Possible Errors (StaticSelect)](#Possible-Errors-StaticSelect)
+      - [User Select](#User-Select)
+        - [Importing the UserSelectElement Class](#Importing-the-UserSelectElement-Class)
+        - [Creating a User Select Object](#Creating-a-User-Select-Object)
+        - [Adding an initial_user (UserSelect)](#Adding-an-initialuser-UserSelect)
+        - [Adding a confirmation dialog (UserSelectElement)](#Adding-a-confirmation-dialog-UserSelectElement)
+        - [Possible Errors (UserSelect)](#Possible-Errors-UserSelect)
     - [Composition Objects](#Composition-Objects)
       - [Text](#Text)
         - [Importing the Text Class](#Importing-the-Text-Class)
@@ -90,6 +96,8 @@ This library is still in active development and only the following classes are c
 
 > - **Image** > <https://api.slack.com/reference/messaging/block-elements#image>
 > - **Button** > <https://api.slack.com/reference/messaging/block-elements#button>
+> - **StaticSelect** > <https://api.slack.com/reference/messaging/block-elements#static-select>
+> - **UserSelect** > <https://api.slack.com/reference/messaging/block-elements#users-select>
 
 - Composition Objects
 
@@ -701,6 +709,80 @@ sse.addOptionGroups([
 | 'Cannot have more than 100 optionGroups' | Adding more than 100 options in the optionGroups array | Max optionGroups array size should be 100 |
 | 'initialOptionGroupIndex is out of optionGroup range' | Selecting an optionGroupIndex that is beyond the optionGroups array ranch | Use an initialOptionGroupIndex in the optionGroups array range|
 | 'initialOptionIndex is out of options range' | selecting an initialOptionIndex that is beyond the options array range | Use an initialOptionIndex that is in the option array range |
+
+#### User Select
+
+![User Select](https://res.cloudinary.com/iyikuyoro/image/upload/v1563182440/slack-block-msg-kit/Screenshot_2019-07-15_at_10.17.21_AM.png)
+
+A user select menu is a select menu that displays all the members of a slack workspace for selection.
+
+##### Importing the UserSelectElement Class
+
+```javascript
+import UserSelectElement from 'slack-block-msg-kit/BlockElements/UserSelectElement';
+```
+
+or
+
+```javascript
+import { UserSelectElement } from 'slack-block-msg-kit';
+```
+
+##### Creating a User Select Object
+
+| Parameter | Type | Description | Example |
+| --------- | ---- | ----------- | ------- |
+| actionId  | string | The action id of the select element | 'ACT001' |
+| placeholder | string | The placeholder text for the select element | 'select an option' |
+
+Creating a user select object is done by passing the two required parameters to the constructor.
+
+```javascript
+import UserSelectElement from 'slack-block-msg-kit/BlockElements/UserSelectElement';
+
+const use = new UserSelectElement('actionId', 'placeholder');
+```
+
+##### Adding an initial_user (UserSelect)
+
+An initial user can be selected by default when the select menu is loaded on slack. It is one of the optional parameters that can be added to the user select object. To add an initial_user, simply make use of the **addInitialUser** method.
+
+| Parameter | Type | Description | Example |
+| --------- | ---- | ----------- | ------- |
+| initialUserId  | string | The initial user's slack id | 'CT001122' |
+
+```javascript
+import UserSelectElement from 'slack-block-msg-kit/BlockElements/UserSelectElement';
+
+const use = new UserSelectElement('actionId', 'placeholder');
+
+use.addInitialUser('CT001122');
+```
+
+##### Adding a confirmation dialog (UserSelectElement)
+
+You may wish to confirm the user selection with a [Confirmation Dialog](#Confirmation-Dialog). Simply make use of the (**addConfirmationDialogByParameters**) method for this.
+
+```javascript
+import UserSelectElement from 'slack-block-msg-kit/BlockElements/UserSelectElement';
+import Text, { TextType } from 'slack-block-msg-kit/CompositionObjects/Text'
+
+const use = new UserSelectElement('actionId', 'placeholder');
+
+use.addConfirmationDialogByParameters(
+  'confirm',
+  new Text(TextType.plainText, 'Are you sure?'),
+  'Yes',
+  'No',
+);
+```
+
+##### Possible Errors (UserSelect)
+
+| Error | Cause | Remedy |
+| ----- | ----- | ------ |
+| 'placeholder should not be more than 150 characters.' | Adding more than 150 characters in the placeholder | Reduce the placeholder size |
+| 'actionId should not be more than 255 characters.' | Adding more than 255 characters in the actionId | Reduce the actionId size |
 
 ### Composition Objects
 
