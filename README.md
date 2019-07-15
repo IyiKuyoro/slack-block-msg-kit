@@ -12,9 +12,6 @@ This is a simple library that helps build slack block messages and all it's elem
   - [Currently available classes](#Currently-available-classes)
   - [How to Use](#How-to-Use)
     - [Block Elements](#Block-Elements)
-      - [Image Element](#Image-Element)
-        - [Importing the image class](#Importing-the-image-class)
-        - [Creating an Image Element](#Creating-an-Image-Element)
       - [Static Select](#Static-Select)
         - [Importing the StaticSelect Class](#Importing-the-StaticSelect-Class)
         - [Creating a Static Select Object](#Creating-a-Static-Select-Object)
@@ -81,34 +78,6 @@ Typically you will have setup a slack bot you wish to use in sending messages on
 Install the package as a dependency to get started. `npm i --save slack-block-msg-kit`
 
 ### Block Elements
-
-#### Image Element
-
-An image element just like a button element is usually a component of a block like a section.
-
-##### Importing the image class
-
-The image class can be imported in one of two ways
-
-```javascript
-import ImageElement from 'slack-block-msg-kit/BlockElements/ImageElement';
-```
-
-or
-
-```javascript
-import { ImageElement } from 'slack-block-msg-kit';
-```
-
-##### Creating an Image Element
-
-This is probably one of the easiest objects you can create with this library. Simply call the constructor passing the two required parameters; the image URl and the alternate text.
-
-```javascript
-import { ImageElement } from 'slack-block-msg-kit';
-
-const img = new ImageElement('https://fakeimage.img', 'fake image');
-```
 
 #### Static Select
 
