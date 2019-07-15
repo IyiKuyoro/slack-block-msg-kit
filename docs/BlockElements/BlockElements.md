@@ -1,6 +1,6 @@
 # Block Elements
 
-There are a number of elements that can be added to slack [blocks](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Block.md). Slack has its documentation for block elements [here](https://api.slack.com/reference/messaging/block-elements).
+There are a number of elements that can be added to slack [blocks](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/Block.md). Slack has its documentation for block elements [here](https://api.slack.com/reference/messaging/block-elements).
 
 Various classes have been added to this library to represent the shape of the expected slack blocks.
 

@@ -4,7 +4,7 @@ Slack messages are now built with individual layout blocks that comprise of a nu
 
 In this library, various classes have been used to represent the shape of the expected slack blocks.
 
-- [Section](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/SectionBlock.md)
-- [Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/ImageBlock.md)
-- [Actions](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/ActionsBlock.md)
-- [Context](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/ContextBlock.md)
+- [Section](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/SectionBlock.md)
+- [Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ImageBlock.md)
+- [Actions](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ActionsBlock.md)
+- [Context](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/ContextBlock.md)

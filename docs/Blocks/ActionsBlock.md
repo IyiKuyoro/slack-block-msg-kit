@@ -20,10 +20,10 @@ import Actions from 'slack-block-msg-kit/Blocks/Actions';
 
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
-| elements  | [BlockElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements.md)[] | An array of block elements with the exception of ImageElement that is to be rendered in the actions. | [ new ButtonElement('button', 'ACT001') ] |
+| elements  | [BlockElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/BlockElements.md)[] | An array of block elements with the exception of ImageElement that is to be rendered in the actions. | [ new ButtonElement('button', 'ACT001') ] |
 | _blockId_   | string? | A string that represents the id of this block element. | 'BLK001' |
 
-The actions object can be created by passing an array of [BlockElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements.md). Below is an example of the creation of the Actions block above.
+The actions object can be created by passing an array of [BlockElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/BlockElements.md). Below is an example of the creation of the Actions block above.
 
 ```javascript
 import Actions from 'slack-block-msg-kit/Blocks/Actions';
@@ -81,7 +81,7 @@ act.addBlockId('BLK001');
 
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
-| elements  | [BlockElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements.md)[] | An array of block elements with the exception of ImageElement that added to the elements to be rendered in the actions. | [ new ButtonElement('button', 'ACT001') ] |
+| elements  | [BlockElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/BlockElements.md)[] | An array of block elements with the exception of ImageElement that added to the elements to be rendered in the actions. | [ new ButtonElement('button', 'ACT001') ] |
 
 To add to the list of elements that is to be rendered, simply call the **addElements** method. Keep in mind that you cannot have more than 5 elements on one actions object.
 
