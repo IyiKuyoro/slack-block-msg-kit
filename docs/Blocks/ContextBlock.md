@@ -20,7 +20,7 @@ import Context from 'slack-block-msg-kit/Blocks/Context';
 
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
-| elements  | ([ImageElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/Docs/ImageElement.md) \| [Text](#Text))[] | An array of image elements and text that is rendered as the context | [ new ImageElement('<https://fakeimage.jpg>', 'fake image'), new Text(TextType.mrkdwn, 'some text') ] |
+| elements  | ([ImageElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/ImageElement.md) \| [Text](#Text))[] | An array of image elements and text that is rendered as the context | [ new ImageElement('<https://fakeimage.jpg>', 'fake image'), new Text(TextType.mrkdwn, 'some text') ] |
 | _blockId_   | string? | A string that represents the id of this block element. | 'BLK001' |
 
 A context object is created by passing an array of image elements or text objects as the first parameter of the constructor. Below is an example to create the context above.
@@ -75,7 +75,7 @@ cnt.addBlockId('BLK001');
 
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
-| elements  | ([ImageElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/Docs/ImageElement.md) \| [Text](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/Docs/Text.md))[] | An array of image elements and text that is rendered as the context | [ new ImageElement('<https://fakeimage.jpg>', 'fake image'), new Text(TextType.mrkdwn, 'some text') ] |
+| elements  | ([ImageElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/ImageElement.md) \| [Text](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Text.md))[] | An array of image elements and text that is rendered as the context | [ new ImageElement('<https://fakeimage.jpg>', 'fake image'), new Text(TextType.mrkdwn, 'some text') ] |
 
 To add elements to the array, simply call the **addElements** method and pass the array of ImageElement and/or Text. Note however, that you cannot have more than 10 elements.
 

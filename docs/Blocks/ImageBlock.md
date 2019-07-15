@@ -1,6 +1,6 @@
 # Image
 
-Images can be displayed in slack messages as well. [Here](https://api.slack.com/reference/messaging/blocks#image) is the slack documentation of the image block. This is quite different from [Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/Docs/ImageElement.md).
+Images can be displayed in slack messages as well. [Here](https://api.slack.com/reference/messaging/blocks#image) is the slack documentation of the image block. This is quite different from [Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/ImageElement.md).
 
 ## Importing the Image class
 

@@ -18,7 +18,7 @@ import { Section } from 'slack-block-msg-kit';
 
 ## Creating a Section
 
-To create a [Section](https://api.slack.com/reference/messaging/blocks#section), a [text object](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/Docs/Text.md) is required. The text object is rendered as the message that is displayed on slack. Below is a short example on how to instantiate a simple section.
+To create a [Section](https://api.slack.com/reference/messaging/blocks#section), a [text object](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Text.md) is required. The text object is rendered as the message that is displayed on slack. Below is a short example on how to instantiate a simple section.
 
 ```javascript
 import Section from 'slack-block-msg-kit/Blocks/Section';
@@ -45,7 +45,7 @@ const section = new Section(
 
 ## Adding a field (Section)
 
-A field is a array of [text objects](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/Docs/Text.md) that are rendered side by side in a table like manner in a section. Below is a visual example of how fields are rendered as on slack.
+A field is a array of [text objects](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Text.md) that are rendered side by side in a table like manner in a section. Below is a visual example of how fields are rendered as on slack.
 
 ![Fields Example Image](https://res.cloudinary.com/iyikuyoro/image/upload/v1562519506/slack-block-msg-kit/Screenshot_2019-07-07_at_6.11.12_PM.png)
 
@@ -70,7 +70,7 @@ section
 
 ## Adding an accessory
 
-Accessories which are typically [block elements](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/develop/Docs/BlockElements.md) can be added to the section. Below is an example of a button accessory that has been added to a section object.
+Accessories which are typically [block elements](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements.md) can be added to the section. Below is an example of a button accessory that has been added to a section object.
 
 ![Button accessory on section image](https://res.cloudinary.com/iyikuyoro/image/upload/v1562519902/slack-block-msg-kit/Screenshot_2019-07-07_at_6.18.07_PM.png)
 

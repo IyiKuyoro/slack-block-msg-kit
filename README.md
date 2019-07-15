@@ -11,7 +11,6 @@ This is a simple library that helps build slack block messages and all it's elem
   - [Table of Content](#Table-of-Content)
   - [Currently available classes](#Currently-available-classes)
   - [How to Use](#How-to-Use)
-    - [Blocks](#Blocks)
     - [Block Elements](#Block-Elements)
       - [Button](#Button)
         - [Importing the Button Class](#Importing-the-Button-Class)
@@ -87,10 +86,6 @@ This library is still in active development and only the following classes are c
 Typically you will have setup a slack bot you wish to use in sending messages on slack. This document does not contain any instructions on how to setup a slack bot or how to communicate with the slack API for that mater. The instructions detailed below are to help build the slack message layout blocks that are sent to slack for display.
 
 Install the package as a dependency to get started. `npm i --save slack-block-msg-kit`
-
-### Blocks
-
-Slack messages are now built with individual layout blocks that comprise of a number of elements sent as a json object. [This](https://api.slack.com/reference/messaging/blocks) page contains all the currently available blocks from slack.
 
 ### Block Elements
 
