@@ -1,6 +1,6 @@
 # Text
 
-A Text object must have a ([TextType](#TextType)). A text object cannot be sent to slack as a stand alone object. It is usually a composition of another object, perhaps a [section](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/Blocks/Section.md) or a [Button](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/BlockElements/ButtonElement.md).
+A Text object must have a ([TextType](#TextType)). A text object cannot be sent to slack as a stand alone object. It is usually a composition of another object, perhaps a [section](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/Section.md) or a [Button](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ButtonElement.md).
 
 ## Table of Content
 

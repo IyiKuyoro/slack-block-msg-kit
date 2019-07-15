@@ -59,7 +59,7 @@ use.addInitialUser('CT001122');
 
 ## Adding a confirmation dialog (addConfirmationDialogByParameters())
 
-You may wish to confirm the user selection with a [Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/Docs/CompositionObjects/ConfirmationDialog.md). Simply make use of the (**addConfirmationDialogByParameters**) method for this.
+You may wish to confirm the user selection with a [Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/ConfirmationDialog.md). Simply make use of the (**addConfirmationDialogByParameters**) method for this.
 
 ```javascript
 import UserSelectElement from 'slack-block-msg-kit/BlockElements/UserSelectElement';
