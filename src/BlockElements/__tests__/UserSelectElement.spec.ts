@@ -16,43 +16,47 @@ describe('UserSelectElement', () => {
   });
 
   describe('addInitialUser()', () => {
-    const userSelect = new UserSelectElement('ACT001', 'placeholder');
+    it('should add an initial user', () => {
+      const userSelect = new UserSelectElement('ACT001', 'placeholder');
 
-    userSelect.addInitialUser('CD001122');
+      userSelect.addInitialUser('CD001122');
 
-    expect(userSelect).toEqual({
-      action_id: 'ACT001',
-      initial_user: 'CD001122',
-      placeholder: {
-        text: 'placeholder',
-        type: 'plain_text',
-      },
-      type: 'users_select',
+      expect(userSelect).toEqual({
+        action_id: 'ACT001',
+        initial_user: 'CD001122',
+        placeholder: {
+          text: 'placeholder',
+          type: 'plain_text',
+        },
+        type: 'users_select',
+      });
     });
   });
 
   describe('addConfirmationDialogByParameters()', () => {
-    const userSelect = new UserSelectElement('ACT001', 'placeholder');
+    it('should add a confirmation dialog', () => {
+      const userSelect = new UserSelectElement('ACT001', 'placeholder');
 
-    userSelect.addConfirmationDialogByParameters('Confirm', new Text(TextType.plainText, 'dialog text'), 'Yes', 'No');
+      userSelect.addConfirmationDialogByParameters('Confirm', new Text(TextType.plainText, 'dialog text'), 'Yes', 'No');
 
-    expect(userSelect.confirm).toEqual({
-      confirm: {
-        text: 'Yes',
-        type: 'plain_text',
-      },
-      deny: {
-        text: 'No',
-        type: 'plain_text',
-      },
-      text: {
-        text: 'dialog text',
-        type: 'plain_text',
-      },
-      title: {
-        text: 'Confirm',
-        type: 'plain_text',
-      },
+      expect(userSelect.confirm).toEqual({
+        confirm: {
+          text: 'Yes',
+          type: 'plain_text',
+        },
+        deny: {
+          text: 'No',
+          type: 'plain_text',
+        },
+        text: {
+          text: 'dialog text',
+          type: 'plain_text',
+        },
+        title: {
+          text: 'Confirm',
+          type: 'plain_text',
+        },
+      });
     });
   });
 });

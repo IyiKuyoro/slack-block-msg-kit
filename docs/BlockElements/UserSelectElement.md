@@ -4,15 +4,15 @@
 
 A user select menu is a select menu that displays all the members of a slack workspace for selection.
 
-## Table pf Content
+## Table of Content
 
 - [User Select](#User-Select)
-  - [Table pf Content](#Table-pf-Content)
+  - [Table of Content](#Table-of-Content)
   - [Importing the UserSelectElement Class](#Importing-the-UserSelectElement-Class)
   - [Creating a User Select Object (Constructor)](#Creating-a-User-Select-Object-Constructor)
   - [Adding an initial_user (addInitialUser())](#Adding-an-initialuser-addInitialUser)
   - [Adding a confirmation dialog (addConfirmationDialogByParameters())](#Adding-a-confirmation-dialog-addConfirmationDialogByParameters)
-  - [Possible Errors (UserSelect)](#Possible-Errors-UserSelect)
+  - [Possible Errors](#Possible-Errors)
 
 ## Importing the UserSelectElement Class
 
@@ -75,7 +75,7 @@ use.addConfirmationDialogByParameters(
 );
 ```
 
-## Possible Errors (UserSelect)
+## Possible Errors
 
 | Error | Cause | Remedy |
 | ----- | ----- | ------ |

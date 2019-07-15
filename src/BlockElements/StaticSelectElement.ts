@@ -1,7 +1,5 @@
-import ConfirmationDialog from '../CompositionObjects/ConfirmationDialog';
 import Option from '../CompositionObjects/Option';
 import OptionGroup from '../CompositionObjects/OptionGroup';
-import Text from '../CompositionObjects/Text';
 import { Helpers } from '../helpers';
 import { BlockElementType } from './BlockElement';
 import SelectElement from './SelectElement';
@@ -14,7 +12,6 @@ export default class StaticSelectElement extends SelectElement {
   public options?: Option[];
   public option_groups?: OptionGroup[];
   public initial_option?: Option;
-  public confirm?: ConfirmationDialog;
 
   /**
    * @description Create an instance of the static select element
@@ -65,26 +62,6 @@ export default class StaticSelectElement extends SelectElement {
 
     this.option_groups = optionGroups;
     this.assignInitialOptionOptionGroups(optionGroups, initialOptionGroupIndex, initialOptionIndex);
-
-    return this;
-  }
-
-  /**
-   * @description Add a confirmation dialog by providing the parameters that is displayed when an option is selected.
-   * This method will create the confirmation dialog.
-   * @param  {string} dialogTitle The dialog title
-   * @param  {Text} dialogText The message to be displayed in the dialog
-   * @param  {string} confirmButton The confirm button label text
-   * @param  {string} denyButton The deny button text
-   * @returns ButtonElement
-   */
-  public addConfirmationDialogByParameters(
-    dialogTitle: string,
-    dialogText: Text,
-    confirmButton: string,
-    denyButton: string,
-  ): StaticSelectElement {
-    this.confirm = new ConfirmationDialog(dialogTitle, dialogText, confirmButton, denyButton);
 
     return this;
   }
