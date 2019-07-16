@@ -2,6 +2,7 @@ import BlockElement, { BlockElementType } from './BlockElements/BlockElement';
 import ButtonElement, { ButtonStyle } from './BlockElements/ButtonElement';
 import ChannelSelectElement from './BlockElements/ChannelSelectElement';
 import ConversationSelectElement from './BlockElements/ConversationSelectElement';
+import DatePickerElement from './BlockElements/DatePickerElement';
 import ImageElement from './BlockElements/ImageElement';
 import OverflowMenuElement from './BlockElements/OverflowMenuElement';
 import StaticSelectElement from './BlockElements/StaticSelectElement';
@@ -28,6 +29,7 @@ export {
   ConfirmationDialog,
   Context,
   ConversationSelectElement,
+  DatePickerElement,
   Image,
   ImageElement,
   Option,
