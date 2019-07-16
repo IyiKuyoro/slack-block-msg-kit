@@ -1,5 +1,6 @@
 import BlockElement, { BlockElementType } from './BlockElements/BlockElement';
 import ButtonElement, { ButtonStyle } from './BlockElements/ButtonElement';
+import ChannelSelectElement from './BlockElements/ChannelSelectElement';
 import ConversationSelectElement from './BlockElements/ConversationSelectElement';
 import ImageElement from './BlockElements/ImageElement';
 import StaticSelectElement from './BlockElements/StaticSelectElement';
@@ -22,6 +23,7 @@ export {
   BlockElementType,
   ButtonElement,
   ButtonStyle,
+  ChannelSelectElement,
   ConfirmationDialog,
   Context,
   ConversationSelectElement,

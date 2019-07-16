@@ -2,7 +2,7 @@
 
 ![Conversation Select](https://res.cloudinary.com/iyikuyoro/image/upload/v1563224247/slack-block-msg-kit/Screenshot_2019-07-15_at_9.56.26_PM.png)
 
-A [conversation select](https://api.slack.com/reference/messaging/block-elements#conversation-select) menu lists the available channels and DM to the user on slack.
+A [conversation select](https://api.slack.com/reference/messaging/block-elements#conversation-select) menu lists the available communications to the user on slack.
 
 ## Table of Content
 
