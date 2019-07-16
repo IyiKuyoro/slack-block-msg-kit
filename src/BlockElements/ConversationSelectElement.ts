@@ -18,8 +18,8 @@ export default class ConversationSelectElement extends SelectElement {
   }
 
   /**
-   * @description Add the initial user
-   * @param  {string} initialConversationId The default selected user's slack id
+   * @description Add the initial conversation
+   * @param  {string} initialConversationId The default selected conversation's slack id
    * @returns ConversationSelectElement
    */
   public addInitialConversation(initialConversationId: string): ConversationSelectElement {
