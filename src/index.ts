@@ -3,6 +3,7 @@ import ButtonElement, { ButtonStyle } from './BlockElements/ButtonElement';
 import ChannelSelectElement from './BlockElements/ChannelSelectElement';
 import ConversationSelectElement from './BlockElements/ConversationSelectElement';
 import ImageElement from './BlockElements/ImageElement';
+import OverflowMenuElement from './BlockElements/OverflowMenuElement';
 import StaticSelectElement from './BlockElements/StaticSelectElement';
 import UserSelectElement from './BlockElements/UserSelectElement';
 import Actions from './Blocks/Actions';
@@ -31,6 +32,7 @@ export {
   ImageElement,
   Option,
   OptionGroup,
+  OverflowMenuElement,
   Section,
   StaticSelectElement,
   UserSelectElement,
