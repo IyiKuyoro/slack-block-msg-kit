@@ -57,8 +57,6 @@ overflowMenu.addConfirmationDialogByParameters(
 );
 ```
 
-## Possible Errors
-
 | Error | Cause | Remedy |
 | ----- | ----- | ------ |
 | 'actionId should not be more than 255 characters.' | Adding more than 255 characters in the actionId | Reduce the actionId size |
