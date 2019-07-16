@@ -37,6 +37,7 @@ This library is still in active development and only the following classes are c
 > - **[ConversationSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ConversationSelectElement.md)**
 > - **[ChannelSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ChannelSelectElement.md)**
 > - **[OverflowMenu](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/OverflowMenuElement.md)**
+> - **[DatePicker](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/DatePickerElement.md)**
 
 - [Composition Objects](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/CompositionObjects.md)
 
