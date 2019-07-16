@@ -27,6 +27,7 @@ This library is still in active development and only the following classes are c
 > - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/ImageBlock.md)**
 > - **[Actions](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/ActionsBlock.md)**
 > - **[Context](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/ContextBlock.md)**
+> - **[Divider](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/Divider.md)**
 
 - [Block Elements](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/BlockElements.md)
 

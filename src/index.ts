@@ -10,6 +10,7 @@ import UserSelectElement from './BlockElements/UserSelectElement';
 import Actions from './Blocks/Actions';
 import Block, { BlockType } from './Blocks/Block';
 import Context from './Blocks/Context';
+import Divider from './Blocks/Divider';
 import Image from './Blocks/Image';
 import Section from './Blocks/Section';
 import ConfirmationDialog from './CompositionObjects/ConfirmationDialog';
@@ -30,6 +31,7 @@ export {
   Context,
   ConversationSelectElement,
   DatePickerElement,
+  Divider,
   Image,
   ImageElement,
   Option,
