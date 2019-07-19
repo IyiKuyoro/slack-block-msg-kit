@@ -50,6 +50,7 @@ This library is still in active development and only the following classes are c
 ## Contributors
 
 - [Opeoluwa Iyi-Kuyoro](https://github.com/IyiKuyoro): 👨🏿(Creator)
+- [Akinremi Olumide](https://github.com/akinmyde): 👨🏿(Contributor)
 
 ## How to Contribute
 
