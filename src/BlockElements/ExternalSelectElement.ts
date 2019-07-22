@@ -3,7 +3,7 @@ import { BlockElementType } from './BlockElement';
 import SelectElement from './SelectElement';
 
 /**
- * @description This is the base class for external data source like static select.
+ * @description This is the class for external data source like static select.
  * For more info regarding select elements, kindly visit https://api.slack.com/reference/messaging/block-elements#external-select
  */
 export default class ExternalSelectElement extends SelectElement {

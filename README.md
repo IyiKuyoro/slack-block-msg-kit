@@ -34,6 +34,7 @@ This library is still in active development and only the following classes are c
 > - **[Image](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ImageElement.md)**
 > - **[Button](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ButtonElement.md)**
 > - **[StaticSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/StaticSelectElement.md)**
+> - **[ExternalSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ExternalSelectElement.md)**
 > - **[UserSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/UserSelectElement.md)**
 > - **[ConversationSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ConversationSelectElement.md)**
 > - **[ChannelSelect](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/BlockElements/ChannelSelectElement.md)**
