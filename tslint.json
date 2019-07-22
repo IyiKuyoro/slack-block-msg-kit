@@ -4,6 +4,7 @@
     "variable-name": [
       true,
       "allow-snake-case"
-    ]
+    ],
+    "array-type": false
   }
 }

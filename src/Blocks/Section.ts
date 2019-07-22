@@ -13,12 +13,7 @@ export default class Section extends Block {
   public accessory?: BlockElement;
 
   constructor(text: Text, blockId?: string) {
-    // Assign a blockId is one is passed
-    if (blockId !== undefined) {
-      super(BlockType.section, blockId);
-    } else {
-      super(BlockType.section);
-    }
+    super(BlockType.section, blockId);
 
     Helpers.validateString(text.text, 'Text string', 3000);
     this.text = text;

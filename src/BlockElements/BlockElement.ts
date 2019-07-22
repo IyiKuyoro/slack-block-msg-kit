@@ -1,3 +1,5 @@
+import { Helpers } from '../helpers';
+
 export enum BlockElementType {
   image = 'image',
   button = 'button',
@@ -15,9 +17,19 @@ export enum BlockElementType {
  * For more info regarding Block Elements, kindly visit https://api.slack.com/reference/messaging/block-elements
  */
 export default abstract class BlockElement {
+  public action_id?: string;
+  public type: BlockElementType;
+
   /**
-   * @description Constructs a new block element
+   * @description Constructs a new block element.
    * @param  {BlockElementType} type The type of the block element being created
    */
-  constructor(public type: BlockElementType) {}
+  constructor(type: BlockElementType, actionId?: string) {
+    if (actionId) {
+      Helpers.validateString(actionId, 'actionId', 255);
+      this.action_id = actionId;
+    }
+
+    this.type = type;
+  }
 }

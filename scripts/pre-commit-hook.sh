@@ -7,4 +7,5 @@ npm run lint && echo "Code linting successful"
 
 npm run format && echo "Code formatting successful"
 
-git add .
+# Disabling this temporarily
+# git add .
