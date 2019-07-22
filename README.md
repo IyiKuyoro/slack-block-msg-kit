@@ -18,7 +18,9 @@ Typically you will have setup a slack bot you wish to use in sending messages on
 
 Install the package as a dependency to get started. `npm i --save slack-block-msg-kit`
 
-This library is still in active development and only the following classes are currently available.
+To create an interactive message that has the payload to be sent to slack, make use of the [InteractiveMessage](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/InteractiveMessage.md) class. Please note that the interactive message implementation here only supports the slack block kits. Support will be added for the legacy attachments.
+
+Below is a list of all the available blocks, elements and composition objects to be used in crafting your slack messages.
 
 - [Block](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/Blocks/Blocks.md)
 

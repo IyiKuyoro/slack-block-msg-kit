@@ -18,6 +18,7 @@ import ConfirmationDialog from './CompositionObjects/ConfirmationDialog';
 import Option from './CompositionObjects/Option';
 import OptionGroup from './CompositionObjects/OptionGroup';
 import Text, { TextType } from './CompositionObjects/Text';
+import InteractiveMessage from './InteractiveMessage';
 
 export {
   Actions,
@@ -36,6 +37,7 @@ export {
   ExternalSelectElement,
   Image,
   ImageElement,
+  InteractiveMessage,
   Option,
   OptionGroup,
   OverflowMenuElement,
