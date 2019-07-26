@@ -18,6 +18,12 @@ import ConfirmationDialog from './CompositionObjects/ConfirmationDialog';
 import Option from './CompositionObjects/Option';
 import OptionGroup from './CompositionObjects/OptionGroup';
 import Text, { TextType } from './CompositionObjects/Text';
+import Dialog from './FeatureElements/Dialog';
+import DialogSelectElement from './FeatureElements/DialogSelectElement';
+import DialogSelectOption from './FeatureElements/DialogSelectOption';
+import DialogSelectOptionGroup from './FeatureElements/DialogSelectOptionGroup';
+import DialogTextareaElement from './FeatureElements/DialogTextareaElement';
+import DialogTextElement from './FeatureElements/DialogTextElement';
 import InteractiveMessage from './InteractiveMessage';
 
 export {
@@ -33,6 +39,12 @@ export {
   Context,
   ConversationSelectElement,
   DatePickerElement,
+  Dialog,
+  DialogSelectElement,
+  DialogSelectOption,
+  DialogSelectOptionGroup,
+  DialogTextareaElement,
+  DialogTextElement,
   Divider,
   ExternalSelectElement,
   Image,

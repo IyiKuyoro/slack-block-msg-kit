@@ -6,11 +6,12 @@ This is a simple library that helps build slack block messages and all it's elem
 
 ## Table of Content
 
-- [Slack Block Message Kit](#Slack-Block-Message-Kit)
-  - [Table of Content](#Table-of-Content)
-  - [How to Use](#How-to-Use)
-  - [Contributors](#Contributors)
-  - [How to Contribute](#How-to-Contribute)
+- [Slack Block Message Kit](#slack-block-message-kit)
+  - [Table of Content](#table-of-content)
+  - [How to Use](#how-to-use)
+    - [Slack Dialogs](#slack-dialogs)
+  - [Contributors](#contributors)
+  - [How to Contribute](#how-to-contribute)
 
 ## How to Use
 
@@ -48,6 +49,17 @@ Below is a list of all the available blocks, elements and composition objects to
 > - **[Confirmation Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/ConfirmationDialog.md)**
 > - **[Option](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/Option.md)**
 > - **[OptionGroup](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObjects/OptionGroup.md)**
+
+### Slack Dialogs
+
+Dialogs are a very convenient way of collecting information on slack. We have included a dialog class together with all supporting element to aid the creation of dialogs and elements in your codebase. Here is a list to the documentation of the dialog and all the elements.
+
+- **[Dialog](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/FeatureElements/Dialog.md)**
+- **[DialogTextElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/FeatureElements/DialogTextElement.md)**
+- **[DialogTextareaElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/FeatureElements/DialogTextareaElement.md)**
+- **[DialogSelectElement](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/FeatureElements/DialogSelectElement.md)**
+- **[DialogSelectOption](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/FeatureElements/DialogSelectOption.md)**
+- **[DialogSelectOptionGroup](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/FeatureElements/DialogSelectOptionGroup.md)**
 
 ## Contributors
 
