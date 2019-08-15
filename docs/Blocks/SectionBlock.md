@@ -2,6 +2,10 @@
 
 A section usually represents a block of text in a message. It could include images, buttons and table like text among other elements. In most cases, all slack messages will have at least one section block.
 
+Here is a short video tutorial on how to create a section.
+
+[![Section Tutorial Video](https://res.cloudinary.com/iyikuyoro/image/upload/v1565897966/slack-block-msg-kit/Untitled_presentation.png)](https://www.youtube.com/watch?v=54cOgOYAsjE)
+
 ## Importing the Section Class
 
 There are two ways of importing the Section class.
