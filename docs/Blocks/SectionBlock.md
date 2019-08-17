@@ -4,8 +4,6 @@ A section usually represents a block of text in a message. It could include imag
 
 Here is a short video tutorial on how to create a section.
 
-[![Section Tutorial Video](https://res.cloudinary.com/iyikuyoro/image/upload/v1565897966/slack-block-msg-kit/Untitled_presentation.png)](https://www.youtube.com/watch?v=54cOgOYAsjE)
-
 ## Importing the Section Class
 
 There are two ways of importing the Section class.
@@ -21,6 +19,8 @@ import { Section } from 'slack-block-msg-kit';
 ```
 
 ## Creating a Section
+
+[![Section Tutorial Video](https://res.cloudinary.com/iyikuyoro/image/upload/v1565897966/slack-block-msg-kit/Untitled_presentation.png)](https://www.youtube.com/watch?v=54cOgOYAsjE)
 
 To create a [Section](https://api.slack.com/reference/messaging/blocks#section), a [text object](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObject/Text.md) is required. The text object is rendered as the message that is displayed on slack. Below is a short example on how to instantiate a simple section.
 
@@ -48,6 +48,8 @@ const section = new Section(
 ```
 
 ## Adding a field (Section)
+
+[![add field video tutorial](https://res.cloudinary.com/iyikuyoro/image/upload/v1566061569/slack-block-msg-kit/add_field.png)](https://youtu.be/L5tbt1kYvs8)
 
 A field is a array of [text objects](https://github.com/IyiKuyoro/slack-block-msg-kit/blob/master/docs/CompositionObject/Text.md) that are rendered side by side in a table like manner in a section. Below is a visual example of how fields are rendered as on slack.
 
