@@ -1,6 +1,6 @@
 import InteractiveMessage from '..';
-import Section from '../../../Blocks/Section';
-import Text, { TextType } from '../../../CompositionObjects/Text';
+import Section from '../../Blocks/Section';
+import Text, { TextType } from '../../CompositionObjects/Text';
 
 describe('InteractiveMessage', () => {
   it('should create an interactive message', () => {
